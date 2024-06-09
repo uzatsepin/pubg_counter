@@ -1,14 +1,19 @@
 <script setup lang="ts">
 
-import StatsItem from "./StatsItem.vue"
-const images = import.meta.glob('@/assets/images/*')
 
+const images = import.meta.globEager('@/assets/images/*')
+const images2 = import.meta.glob('@/assets/images/*')
+// Создаем объект для быстрых ссылок на изображения
+const imageMap = {}
+for (const path in images) {
+    imageMap[path.replace('/src', '.')] = images[path].default
+}
 
 const statsItem = [
     {
         title: 'Прибыль за тап',
         value: '+1',
-        img: images['/src/assets/images/single-money.png']
+        img: imageMap['./assets/images/single-money.png']
     },
     {
         title: 'UC для апа',
@@ -18,7 +23,7 @@ const statsItem = [
     {
         title: 'Прибыль в час',
         value: '+0',
-        img: images['/src/assets/images/double-money.png']
+        img: imageMap['./assets/images/double-money.png']
     }
 ]
 

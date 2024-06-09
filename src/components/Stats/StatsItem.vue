@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-
+const images = import.meta.glob('@/assets/images/*')
 interface IStatItem {
     title: string,
     value: string,
