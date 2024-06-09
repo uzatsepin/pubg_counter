@@ -1,0 +1,11 @@
+@import './reset';
+@import './fonts';
+@import './vars';
+
+body {
+  font-family: 'SF Pro Display Regular', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  background-color: $bgColor;
+  color: #ffffff;
+}
