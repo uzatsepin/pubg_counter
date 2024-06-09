@@ -2,7 +2,7 @@
     <div class="StatsItem">
         <p class="StatsItem__descr">{{ item.title }}</p>
         <div class="StatsItem__container" :class="{ 'no-img': !item.img }">
-            <img :src="`./src/assets/images/${item.img}`" alt="money" class="StatsItem__container-img" v-if="item.img">
+            <img :src="item.img" alt="money" class="StatsItem__container-img" v-if="item.img">
             <p class="StatsItem__container-value">{{ item.value }}</p>
         </div>
     </div>

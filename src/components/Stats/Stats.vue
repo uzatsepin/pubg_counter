@@ -6,7 +6,7 @@ const statsItem = [
     {
         title: 'Прибыль за тап',
         value: '+1',
-        img: 'single-money.png'
+        img: './src/assets/images/single-money.png'
     },
     {
         title: 'UC для апа',
@@ -16,7 +16,7 @@ const statsItem = [
     {
         title: 'Прибыль в час',
         value: '+0',
-        img: 'double-money.png'
+        img: './src/assets/images/double-money.png'
     }
 ]
 
